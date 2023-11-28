@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- dont forget to remove this link when submitting -->
   <link rel="stylesheet" href="app.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
@@ -94,12 +96,13 @@
           </svg>
         </button>
 
-        <button class="drop-down-btn" aria-label="Profile menu" aria-expanded="false" aria-haspopup="true"
-          aria-controls="drop-down-sec" id="profile-btn">
-          <div class="DC-div">
-            <div class="DC-child">DC</div>
-          </div>
-        </button>
+        <!-- <button class="drop-down-btn" aria-label="Profile menu" aria-expanded="false" aria-haspopup="true"
+          aria-controls="drop-down-sec" id="profile-btn"> -->
+        <!-- <div class="DC-div"> -->
+        <button class="DC-child-mobile drop-down-btn" aria-label="Profile menu" aria-expanded="false"
+          aria-haspopup="true" aria-controls="drop-down-sec" id="profile-btn">DC</button>
+        <!-- </div> -->
+        <!-- </button> -->
       </div>
     </nav>
 
@@ -230,12 +233,12 @@
         Extend your trial for $1/month for 3 months on select plans.
       </div>
       <div class="btn-div">
-        <a style="text-decoration: none;" href="shopify.com/pricing" target="_blank">
 
-          <button class="btn-div-1" rel="noopener noreferrer" aria-label="visit Shopify pricing page">
-            <p>Select a plan</p>
-          </button>
-        </a>
+        <button class="btn-div-1" rel="noopener noreferrer" aria-label="visit Shopify pricing page">
+          <a style="text-decoration: none;" href="https://www.shopify.com/pricing" target="_blank">
+            Select a plan
+          </a>
+        </button>
         <button class="btn-div-2" rel="noopener noreferrer" aria-label="close the trial callout">
           <div class="icon-wrapper">
             <svg width="20" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -247,292 +250,262 @@
         </button>
       </div>
     </div>
-    <!--  -->
 
     <!-- action container -->
-  <div class="action-container">
-    <div class="action-container-wrapper">
-      <div class="header-wrapper">
-        <div class="header-wrapper-1">
-          <div class="text-warpper">
-            <p id="p-1">Setup guide</p>
-            <p id="p-2">
-              Use this personalized guide to get your store up and running.
-            </p>
-          </div>
-  
-          <div class="completed-div">
-            <div class="completed-num">1 / 5 completed</div>
-            <div class="range-wrapper">
-              <div id="range"></div>
-            </div>
-          </div>
-        </div>
-  
-        <button style="border: none;outline: none;" class="icon-holder" aria-expanded="true" aria-controls="card-sec"
-          aria-label="Card button" id="card-btn">
-          <div style="width: 20px; height: 20px; position: relative">
-            <svg class="collapse" width="20" height="20" viewBox="0 0 21 20" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M15.0303 12.2803C14.7374 12.5732 14.2626 12.5732 13.9697 12.2803L10.5 8.81066L7.03033 12.2803C6.73744 12.5732 6.26256 12.5732 5.96967 12.2803C5.67678 11.9874 5.67678 11.5126 5.96967 11.2197L9.96967 7.21967C10.2626 6.92678 10.7374 6.92678 11.0303 7.21967L15.0303 11.2197C15.3232 11.5126 15.3232 11.9874 15.0303 12.2803Z"
-                fill="#000" />
-            </svg>
-            <svg class="expand hide-element" width="20" height="20" viewBox="0 0 21 20" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M6.21967 8.46967C6.51256 8.17678 6.98744 8.17678 7.28033 8.46967L10.75 11.9393L14.2197 8.46967C14.5126 8.17678 14.9874 8.17678 15.2803 8.46967C15.5732 8.76256 15.5732 9.23744 15.2803 9.53033L11.2803 13.5303C10.9874 13.8232 10.5126 13.8232 10.2197 13.5303L6.21967 9.53033C5.92678 9.23744 5.92678 8.76256 6.21967 8.46967Z"
-                fill="#000" />
-            </svg>
-          </div>
-        </button>
-      </div>
-      <div class="tab-wrapper" id="card-sec" aria-labelledby="card-btn" role="card">
-        <!-- tab one -->
-        <div class=" tab-sec tab-open">
-          <div class=" tab-sec-wrapper tab-open-section">
-            <!-- checkbox -->
-            <div style="
-                      width: 24px;
-                      align-self: stretch;
-                      justify-content: flex-start;
-                      align-items: flex-start;
-                      gap: 8px;
-                      display: flex;
-                      margin-left: 5.5px;
-                    ">
-              <div style="width: 24px; height: 24px; position: relative">
-                <div style="
-                          width: 20px;
-                          height: 20px;
-                          left: 2px;
-                          top: 2px;
-                          position: absolute;
-                          border-radius: 9999px;
-                          border: 2.08px #8a8a8a dotted;
-                        "></div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="tab-title-closed">
-              <p class="tab-title-child-closed">
-                Customize your online store
+    <div class="action-container">
+      <div class="action-container-wrapper">
+        <div class="header-wrapper">
+          <div class="header-wrapper-1">
+            <div class="text-warpper">
+              <p id="p-1">Setup guide</p>
+              <p id="p-2">
+                Use this personalized guide to get your store up and running.
               </p>
-              <div>
-  
+            </div>
+
+            <div class="completed-div">
+              <div class="completed-num" aria-label="number of task completed">0 / 5 completed</div>
+              <div class="range-wrapper">
+                <div id="range"></div>
               </div>
-  
             </div>
           </div>
-          <div style="width: 156.14px; height: 120px; position: relative ;">
-            <div class="tab-image">
-              <img src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="img" />
+
+          <button style="border: none;outline: none;" class="icon-holder" aria-expanded="true" aria-controls="card-sec"
+            aria-label="Card button" id="card-btn">
+            <div style="width: 20px; height: 20px; position: relative">
+              <svg class="collapse" width="20" height="20" viewBox="0 0 21 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.0303 12.2803C14.7374 12.5732 14.2626 12.5732 13.9697 12.2803L10.5 8.81066L7.03033 12.2803C6.73744 12.5732 6.26256 12.5732 5.96967 12.2803C5.67678 11.9874 5.67678 11.5126 5.96967 11.2197L9.96967 7.21967C10.2626 6.92678 10.7374 6.92678 11.0303 7.21967L15.0303 11.2197C15.3232 11.5126 15.3232 11.9874 15.0303 12.2803Z"
+                  fill="#000" />
+              </svg>
+              <svg class="expand hide-element" width="20" height="20" viewBox="0 0 21 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.21967 8.46967C6.51256 8.17678 6.98744 8.17678 7.28033 8.46967L10.75 11.9393L14.2197 8.46967C14.5126 8.17678 14.9874 8.17678 15.2803 8.46967C15.5732 8.76256 15.5732 9.23744 15.2803 9.53033L11.2803 13.5303C10.9874 13.8232 10.5126 13.8232 10.2197 13.5303L6.21967 9.53033C5.92678 9.23744 5.92678 8.76256 6.21967 8.46967Z"
+                  fill="#000" />
+              </svg>
             </div>
-          </div>
+          </button>
         </div>
-        <!-- tab two -->
-        <div class=" tab-sec tab-closed">
-          <div class=" tab-sec-wrapper tab-closed-section">
-            <!-- checkbox -->
-            <div style="
-                      width: 24px;
-                      align-self: stretch;
-                      justify-content: flex-start;
-                      align-items: flex-start;
-                      gap: 8px;
-                      display: flex;
-                      margin-left: 5.5px;
-                    ">
-              <div style="width: 24px; height: 24px; position: relative">
-                <div style="
-                          width: 20px;
-                          height: 20px;
-                          left: 2px;
-                          top: 2px;
-                          position: absolute;
-                          border-radius: 9999px;
-                          border: 2.08px #8a8a8a dotted;
-                        "></div>
+        <div class="tab-wrapper" id="card-sec" aria-labelledby="card-btn" role="card">
+          <!-- tab one -->
+          <div class="tab">
+            <div class="sec-1">
+              <!-- check-box -->
+              <button aria-label="Mark box as completed" class="shopping-item-checkbox">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="not-completed-icon" id="not-completed-icon-${index}">
+                  <circle cx="16" cy="16" r="10" stroke="#8A8A8A" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-dasharray="4 6" />
+                </svg> <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="loading-spinner-icon hidden"
+                  id="loading-spinner-icon-${index}">
+                  <path
+                    d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2"
+                    stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg> <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="completed-icon hidden" id="completed-icon-${index}">
+                  <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                  <path
+                    d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                    fill="#fff"></path>
+                </svg> </button>
+              <!--  -->
+              <button class="tab-title" aria-expanded="true" aria-controls="sec-2" id="sec-2-control">
+                Customize your online store</button>
+            </div>
+            <div class="sec-2" id="sec-2" aria-labelledby="sec-2-control" role="region">
+              <p class="tab-text">Choose a theme and add your logo, colors, and images to reflect your brand. <span
+                  id="link">
+                  Learn
+                  more
+                </span>
+              </p>
+              <button class="btn-parent">
+                Customize theme
+              </button>
+              <div class="tab-img-wrapper">
+                <img src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="img" />
               </div>
             </div>
-            <!--  -->
-            <div class="tab-title-closed">
-              <p class="tab-title-child-closed">
-                Add your first product
-              </p>
-              <!-- <div class="tab-info" style="align-self: stretch; width: 100%">
-                    <span class="tab-text">Write a description, and photos, and set pricing for the products you plan to
-                      sell. </span><span id="link">Learn more</span>
-                  </div>
-                  <div class="tab-info" style="display: flex;">
-                    <div class="btn-parent">
-                      <div class="btn">
-                        Add product
-                      </div>
-                    </div>
-                    <div class="btn-parent-2">
-                      <div class="btn">
-                        Import product
-                      </div>
-                    </div> 
-                  </div>-->
-            </div>
           </div>
-          <!-- <div class="tab-img" style="width: 156.14px; height: 120px; position: relative ;">
-                <div class="tab-image">
-                  <img src="https://crushingit.tech/hackathon-assets/product.png" alt="img" />
-                </div>
-              </div> -->
-        </div>
-        <!-- tab three -->
-        <div class="tab-sec tab-closed">
-          <div class=" tab-sec-wrapper tab-closed-section">
-            <!-- checkbox -->
-            <div style="
-                      width: 24px;
-                      align-self: stretch;
-                      justify-content: flex-start;
-                      align-items: flex-start;
-                      gap: 8px;
-                      display: flex;
-                      margin-left: 5.5px;
-                    ">
-              <div style="width: 24px; height: 24px; position: relative">
-                <div style="
-                          width: 20px;
-                          height: 20px;
-                          left: 2px;
-                          top: 2px;
-                          position: absolute;
-                          border-radius: 9999px;
-                          border: 2.08px #8a8a8a dotted;
-                        "></div>
+          <!-- tab two -->
+          <div class="tab tab-closed">
+            <div class="sec-1">
+              <!-- check-box -->
+              <button aria-label="Mark box as completed" class="shopping-item-checkbox">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="not-completed-icon" id="not-completed-icon-${index}">
+                  <circle cx="16" cy="16" r="10" stroke="#8A8A8A" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-dasharray="4 6" />
+                </svg> <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="loading-spinner-icon hidden"
+                  id="loading-spinner-icon-${index}">
+                  <path
+                    d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2"
+                    stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg> <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="completed-icon hidden" id="completed-icon-${index}">
+                  <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                  <path
+                    d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                    fill="#fff"></path>
+                </svg> </button>
+              <!--  -->
+              <button class="tab-title tab-title-display" aria-expanded="false" aria-controls="sec-2"
+                id="sec-2-control">Add your first product</button>
+            </div>
+            <div class="sec-2 hide-sec-2" id="sec-2" aria-labelledby="sec-2-control" role="region">
+              <p class="tab-text">Write a description, add photos, and set pricing for the products you plan to sell.
+                <span id="link">
+                  Learn
+                  more
+                </span>
+              </p>
+              <button class="btn-parent">
+                Add product
+              </button>
+              <button class="btn-parent-2">
+                import product
+              </button>
+              <div class="tab-img-wrapper">
+                <img src="https://crushingit.tech/hackathon-assets/product.png" alt="img" />
               </div>
             </div>
-            <!--  -->
-            <div class="tab-title-closed">
-              <p class="tab-title-child-closed">
-                Add a custom domain
-              </p>
-              <!-- <div class="tab-info" style="align-self: stretch">
-                    <span class="tab-text">Your current domain is 222219.myshopify.com buy you can add a custom domain to
-                      help customers find your online store. </span><span id="link">Learn more</span>
-                  </div>
-                  <div class="btn-parent">
-                    <div class="btn">
-                      Add domain
-                    </div>
-                  </div> -->
-            </div>
           </div>
-          <!-- <div class="tab-img" style="width: 156.14px; height: 120px; position: relative ;">
-                <div class="tab-image">
-                  <img src="https://crushingit.tech/hackathon-assets/website.png" alt="img" />
-                </div>
-              </div> -->
-        </div>
-        <!-- tab four -->
-        <div class="tab-sec tab-closed">
-          <div class=" tab-sec-wrapper tab-closed-section">
-            <!-- checkbox -->
-            <div style="
-                      width: 24px;
-                      align-self: stretch;
-                      justify-content: flex-start;
-                      align-items: flex-start;
-                      gap: 8px;
-                      display: flex;
-                      margin-left: 5.5px;
-                    ">
-              <div style="width: 24px; height: 24px; position: relative">
-                <div style="
-                          width: 20px;
-                          height: 20px;
-                          left: 2px;
-                          top: 2px;
-                          position: absolute;
-                          border-radius: 9999px;
-                          border: 2.08px #8a8a8a dotted;
-                        "></div>
+          <!-- tab three -->
+          <div class="tab tab-closed">
+            <div class="sec-1">
+              <!-- check-box -->
+              <button aria-label="Mark box as completed" class="shopping-item-checkbox">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="not-completed-icon" id="not-completed-icon-${index}">
+                  <circle cx="16" cy="16" r="10" stroke="#8A8A8A" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-dasharray="4 6" />
+                </svg> <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="loading-spinner-icon hidden"
+                  id="loading-spinner-icon-${index}">
+                  <path
+                    d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2"
+                    stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg> <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="completed-icon hidden" id="completed-icon-${index}">
+                  <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                  <path
+                    d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                    fill="#fff"></path>
+                </svg> </button>
+              <!--  -->
+              <button class="tab-title" aria-expanded="false" aria-controls="sec-2" id="sec-2-control">Add a custom
+                domain</button>
+            </div>
+            <div class="sec-2 hide-sec-2" id="sec-2" aria-labelledby="sec-2-control" role="region">
+              <p class="tab-text">Your current domain is 222219.myshopify.com but you can add a custom domain to help
+                customers find your online store. <span id="link">
+                  Learn
+                  more
+                </span>
+              </p>
+              <button class="btn-parent">
+                Add domain
+              </button>
+              <div class="tab-img-wrapper">
+                <img src="https://crushingit.tech/hackathon-assets/website.png" alt="img" />
               </div>
             </div>
-            <!--  -->
-            <div class="tab-title-closed">
-              <p class="tab-title-child-closed">
-                Name your store
-              </p>
-              <!-- <div class="tab-info" style="align-self: stretch">
-                    <span class="tab-text">Your temporary store name is currently Davii collections. The store name
-                      appears in your admiin and your online store. </span><span id="link">Learn more</span>
-                  </div>
-                  <div class="btn-parent">
-                    <div class="btn">
-                      Name store
-                    </div>
-                  </div> -->
-            </div>
           </div>
-          <!-- <div class="tab-img" style="width: 156.14px; height: 120px; position: relative ;">
-                <div class="tab-image">
-                  <img src="https://crushingit.tech/hackathon-assets/name-store.png" alt="img" />
-                </div>
-              </div> -->
-        </div>
-        <!-- tab five -->
-        <div class="tab-sec tab-closed">
-          <div class=" tab-sec-wrapper tab-closed-section">
-            <!-- checkbox -->
-            <div style="
-                      width: 24px;
-                      align-self: stretch;
-                      justify-content: flex-start;
-                      align-items: flex-start;
-                      gap: 8px;
-                      display: flex;
-                      margin-left: 5.5px;
-                    ">
-              <div style="width: 24px; height: 24px; position: relative">
-                <div style="
-                          width: 20px;
-                          height: 20px;
-                          left: 2px;
-                          top: 2px;
-                          position: absolute;
-                          border-radius: 9999px;
-                          border: 2.08px #8a8a8a dotted;
-                        "></div>
+          <!-- tab four -->
+          <div class="tab tab-closed">
+            <div class="sec-1">
+              <!-- check-box -->
+              <button aria-label="Mark box as completed" class="shopping-item-checkbox">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="not-completed-icon" id="not-completed-icon-${index}">
+                  <circle cx="16" cy="16" r="10" stroke="#8A8A8A" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-dasharray="4 6" />
+                </svg> <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="loading-spinner-icon hidden"
+                  id="loading-spinner-icon-${index}">
+                  <path
+                    d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2"
+                    stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg> <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="completed-icon hidden" id="completed-icon-${index}">
+                  <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                  <path
+                    d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                    fill="#fff"></path>
+                </svg> </button>
+              <!--  -->
+              <button class="tab-title" aria-expanded="false" aria-controls="sec-2" id="sec-2-control">Name your
+                store</button>
+            </div>
+            <div class="sec-2 hide-sec-2" id="sec-2" aria-labelledby="sec-2-control" role="region">
+              <p class="tab-text">Your temporary store name is currently Davii collections. The store name appears
+                in
+                your admin and your online store. <span id="link">
+                  Learn
+                  more
+                </span>
+
+              </p>
+              <button class="btn-parent">
+                Name store
+              </button>
+              <div class="tab-img-wrapper">
+                <img src="https://crushingit.tech/hackathon-assets/name-store.png" alt="img" />
               </div>
             </div>
-            <!--  -->
-            <div class="tab-title-closed">
-              <p class="tab-title-child-closed">
-                Set up a payment provider
+          </div>
+          <!-- tab five -->
+          <div class="tab tab-closed">
+            <div class="sec-1">
+              <!-- check-box -->
+              <button aria-label="Mark box as completed" class="shopping-item-checkbox">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="not-completed-icon" id="not-completed-icon-${index}">
+                  <circle cx="16" cy="16" r="10" stroke="#8A8A8A" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-dasharray="4 6" />
+                </svg> <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="loading-spinner-icon hidden"
+                  id="loading-spinner-icon-${index}">
+                  <path
+                    d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2"
+                    stroke="#1C181D" stroke-width="2.08333" stroke-linecap="round" stroke-linejoin="round" />
+                </svg> <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" class="completed-icon hidden" id="completed-icon-${index}">
+                  <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                  <path
+                    d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                    fill="#fff"></path>
+                </svg> </button>
+              <!--  -->
+              <button class="tab-title" aria-expanded="false" aria-controls="sec-2" id="sec-2-control">Set up a payment
+                provider</button>
+            </div>
+            <div class="sec-2 hide-sec-2" id="sec-2" aria-labelledby="sec-2-control" role="region">
+              <p class="tab-text">Choose a payment provider to start accepting payments. You’ll need to create an
+                account with the payment provider and
+                set it up with your Shopify store. <span id="link">
+                  Learn
+                  more
+                </span>
               </p>
-              <!-- <div class="tab-info" style="align-self: stretch">
-                    <span class="tab-text">Choose a payment provider to start accepting payments. You'll need to create an
-                      account with the payment provider and
-                      set it up with your Shopify store. </span><span id="link">Learn more</span>
-                  </div>
-                  <div class="btn-parent">
-                    <div class="btn">
-                      Set up payment
-                    </div>
-                  </div> -->
+              <button class="btn-parent">
+                Set up payment
+              </button>
+              <div class="tab-img-wrapper">
+                <img src="https://crushingit.tech/hackathon-assets/payment.png" alt="img" />
+              </div>
             </div>
           </div>
-          <!-- <div class="tab-img" style="width: 156.14px; height: 120px; position: relative ;">
-                <div class="tab-image">
-                  <img src="https://crushingit.tech/hackathon-assets/payment.png" alt="img" />
-                </div>
-              </div> -->
         </div>
       </div>
     </div>
   </div>
-
-    <!--  -->
-  </div>
 </body>
-<script src="/shopify-dashboard/app.js"></script>
+<script src="app.js"></script>
 
 </html>
